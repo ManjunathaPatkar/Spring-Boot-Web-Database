@@ -31,4 +31,11 @@ public class Contoller {
         mv.addObject(alien);
         return mv;
      }
+     @RequestMapping("deletealien")
+    public String deletealien(@RequestParam int aid){
+        Alien alien=alienInterface.findById(aid).orElse(new Alien());
+        alienInterface.delete(alien);
+        return "home.jsp";
+
+     }
 }

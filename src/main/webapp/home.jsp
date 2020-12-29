@@ -11,15 +11,22 @@
     <title>JPS Databse</title>
 </head>
 <body>
+<h1> Adding values to Database</h1>
 <form action="addAlien">
     AID:<input type="number" name="aid"><br>
     ANAME:<input type="text" name="aname"><br>
     TECH:<input type="text" name="tech"><br>
     Submit :<button type="submit"></button>
 </form>
+<h1> Getting values from Database using AID</h1>
 <form action="getAlien">
     AID:<input type="number" name="aid"><br>
-    SUBMIT:<button type="submit">
+    SUBMIT:<button type="submit"></button>
+</form>
+<h1> Deleting values from Database using AID</h1>
+<form action="deletealien">
+    AID:<input type="number" name="aid"><br>
+    SUBMIT:<button type="submit"></button>
 </form>
 </body>
 </html>
