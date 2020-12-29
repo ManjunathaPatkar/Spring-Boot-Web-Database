@@ -1,1 +1,1 @@
-insert into alien values (1,'Naveen')
+insert into alien values (1,'Naveen','python')
