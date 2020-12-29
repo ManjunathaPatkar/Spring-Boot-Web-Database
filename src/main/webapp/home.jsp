@@ -16,6 +16,5 @@
     ANAME:<input type="text" name="aname"><br>
     Submit :<button type="submit">
 </form>
-
 </body>
 </html>
