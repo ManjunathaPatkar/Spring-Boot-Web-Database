@@ -72,15 +72,27 @@ public class Contoller {
         System.out.println(alienInterface.findByTechSorted(tech));
         return "home.jsp";
     }
+//    @RequestMapping("/Aliens")
+//    @ResponseBody
+//    public String getallaliens(){
+//
+//        return alienInterface.findAll().toString();
+//    }
+//    @RequestMapping("/Aliens/{aid}")
+//    @ResponseBody
+//    public String getaliens(@PathVariable("aid") int aid){
+//
+//        return alienInterface.findById(aid).toString();
+//    }
     @RequestMapping("/Aliens")
     @ResponseBody
-    public String getallaliens(){
-        return alienInterface.findAll().toString();
+    public List<Alien> getallaliens(){
+        return alienInterface.findAll();
     }
+
     @RequestMapping("/Aliens/{aid}")
     @ResponseBody
-    public String getaliens(@PathVariable("aid") int aid){
-
-        return alienInterface.findById(aid).toString();
+    public Optional<Alien> getalienswithgivenid(@PathVariable("aid") int aid){
+        return alienInterface.findById(aid);
     }
 }
