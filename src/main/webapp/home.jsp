@@ -45,5 +45,10 @@
     AID:<input type="number" name="aid">
     SUBMIT:<button type="submit"></button>
 </form>
+<h1>Finding by tech values and ordering based on aname(custom query)</h1>
+<form action="getbyutechorderbyname">
+    TECH:<input type="text" name="tech"><br>
+    SUBMIT:<button type="button"></button>
+</form>
 </body>
 </html>

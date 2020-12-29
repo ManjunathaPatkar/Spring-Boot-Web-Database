@@ -65,4 +65,9 @@ public class Contoller {
         System.out.println(alienInterface.findByAidGreaterThan(aid));
         return "home.jsp";
     }
+    @RequestMapping("getbyutechorderbyname")
+    public String getbytechorderbyname(@RequestParam String tech){
+        System.out.println(alienInterface.findByTechSorted(tech));
+        return "home.jsp";
+    }
 }
