@@ -15,7 +15,11 @@
     AID:<input type="number" name="aid"><br>
     ANAME:<input type="text" name="aname"><br>
     TECH:<input type="text" name="tech"><br>
-    Submit :<button type="submit">
+    Submit :<button type="submit"></button>
+</form>
+<form action="getAlien">
+    AID:<input type="number" name="aid"><br>
+    SUBMIT:<button type="submit">
 </form>
 </body>
 </html>
