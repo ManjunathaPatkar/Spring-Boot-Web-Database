@@ -28,5 +28,12 @@
     AID:<input type="number" name="aid"><br>
     SUBMIT:<button type="submit"></button>
 </form>
+<h1> Updating values in Database using AID</h1>
+<form action="updatealien">
+    AID:<input type="number" name="aid"><br>
+    NewName:<input type="text" name="aname"><br>
+    Newtech:<input type="text" name="tech"><br>
+    SUBMIT:<button type="submit"></button>
+</form>
 </body>
 </html>

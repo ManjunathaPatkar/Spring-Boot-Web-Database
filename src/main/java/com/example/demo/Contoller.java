@@ -38,4 +38,11 @@ public class Contoller {
         return "home.jsp";
 
      }
+     @RequestMapping("updatealien")
+    public String updatealien(Alien alien){
+        Alien alienn=alienInterface.findById(alien.getAid()).orElse(new Alien());
+        alienInterface.delete(alienn);
+        alienInterface.save(alien);
+        return "home.jsp";
+     }
 }
