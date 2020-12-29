@@ -35,8 +35,14 @@
     Newtech:<input type="text" name="tech"><br>
     SUBMIT:<button type="submit"></button>
 </form>
+<h1>Find by tech name</h1>
 <form action="getalientech">
     tech:<input type="text" name="tech"><br>
+    SUBMIT:<button type="submit"></button>
+</form>
+<h1>Find values greater than given ID</h1>
+<form action="greaterthanid">
+    AID:<input type="number" name="aid">
     SUBMIT:<button type="submit"></button>
 </form>
 </body>

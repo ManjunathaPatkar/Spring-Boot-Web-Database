@@ -59,4 +59,10 @@ public class Contoller {
 //            mv.addObject(alienInterface.findByTech(tech));
 //        return mv;
 //    }
+    @RequestMapping("greaterthanid")
+    public String  greaterthanid(@RequestParam int aid){
+//        ModelAndView mv=new ModelAndView("showdetails.jsp");
+        System.out.println(alienInterface.findByAidGreaterThan(aid));
+        return "home.jsp";
+    }
 }

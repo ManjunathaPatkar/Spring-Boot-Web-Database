@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface AlienInterface extends CrudRepository<Alien,Integer>{
     List<Alien> findByTech(String tech);
+    List<Alien> findByAidGreaterThan(int aid);
 }
