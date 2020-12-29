@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -50,4 +51,12 @@ public class Contoller {
         alienInterface.save(alien);
         return "home.jsp";
     }
+//    @RequestMapping("getalientech")
+//    public ModelAndView getalientech(@RequestParam String tech){
+////        System.out.println(alienInterface.findByTech(tech));
+//            ModelAndView mv=new ModelAndView("showdetails.jsp");
+////            List<Alien> alien= alienInterface.findByTech(tech);
+//            mv.addObject(alienInterface.findByTech(tech));
+//        return mv;
+//    }
 }

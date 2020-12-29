@@ -35,5 +35,9 @@
     Newtech:<input type="text" name="tech"><br>
     SUBMIT:<button type="submit"></button>
 </form>
+<form action="getalientech">
+    tech:<input type="text" name="tech"><br>
+    SUBMIT:<button type="submit"></button>
+</form>
 </body>
 </html>
